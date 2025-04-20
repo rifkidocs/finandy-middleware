@@ -10,7 +10,9 @@ const webhooks = {
   WIF: "https://hook.finandy.com/zjCa0TX_eQJKGZYyrlUK",
   GRT: "https://hook.finandy.com/c1nK0JXjQT05vV8DrlUK",
   PEPE: "https://hook.finandy.com/MjxbIyQkK2q6b5FLrlUK",
-  AEVO: "https://hook.finandy.com/9VDmUcvnqNZahcR0rlUK"
+  AEVO: "https://hook.finandy.com/9VDmUcvnqNZahcR0rlUK",
+  PEOPLE: "https://hook.finandy.com/-hDZWK1mitcG2V8IrlUK",
+  BEL:"https://hook.finandy.com/7AgBOcwf8zavmggtrlUK"
 };
 
 // Antrean per coin
