@@ -41,9 +41,9 @@ async function processQueue(coin) {
       await axios.post(url, payload);
       console.log(`✅ [${coin}] Dikirim ke Finandy`);
     } else {
-      // Jika ada alert dalam 1 menit terakhir, delay 30 detik
-      console.log(`⏳ [${coin}] Delay 30 detik...`);
-      await delay(30000);
+      // Jika ada alert dalam 1 menit terakhir, delay 15 detik
+      console.log(`⏳ [${coin}] Delay 15 detik...`);
+      await delay(15000);
       await axios.post(url, payload);
       console.log(`✅ [${coin}] Dikirim ke Finandy`);
     }
@@ -83,4 +83,4 @@ app.post('/webhook', (req, res) => {
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`🚀 Middleware jalan di http://localhost:${PORT}`);
-}); 
+});
