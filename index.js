@@ -41,9 +41,9 @@ async function processQueue(coin) {
       await axios.post(url, payload);
       console.log(`✅ [${coin}] Dikirim ke Finandy`);
     } else {
-      // Jika ada alert dalam 1 menit terakhir, delay 15 detik
-      console.log(`⏳ [${coin}] Delay 15 detik...`);
-      await delay(15000);
+      // Jika ada alert dalam 1 menit terakhir, delay 3 detik
+      console.log(`⏳ [${coin}] Delay 3 detik...`);
+      await delay(3000);
       await axios.post(url, payload);
       console.log(`✅ [${coin}] Dikirim ke Finandy`);
     }

@@ -6,7 +6,7 @@ Aplikasi middleware untuk menerima webhook dari TradingView dan meneruskannya ke
 
 - Menerima webhook dari TradingView
 - Mendukung beberapa koin (WIF, GRT, PEPE, AEVO)
-- Mengantrikan webhook dan mengirimnya dengan jeda 30 detik per koin
+- Mengantrikan webhook dan mengirimnya dengan jeda 3 detik per koin
 - Logging status pengiriman
 
 ## Instalasi
