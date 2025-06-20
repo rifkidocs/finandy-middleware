@@ -1,11 +1,11 @@
 # Finandy Middleware
 
-Aplikasi middleware untuk menerima webhook dari TradingView dan meneruskannya ke Finandy dengan pembatasan rate (jeda 30 detik antar request per koin).
+Aplikasi middleware untuk menerima webhook dari TradingView dan meneruskannya ke Finandy dengan pembatasan rate (jeda 3 detik antar request per koin).
 
 ## Fitur
 
 - Menerima webhook dari TradingView
-- Mendukung beberapa koin (WIF, GRT, PEPE, AEVO)
+- Mendukung beberapa koin
 - Mengantrikan webhook dan mengirimnya dengan jeda 3 detik per koin
 - Logging status pengiriman
 
