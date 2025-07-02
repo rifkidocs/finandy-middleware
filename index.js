@@ -10,9 +10,9 @@ const webhooks = {
   WIF: "https://hook.finandy.com/zjCa0TX_eQJKGZYyrlUK",
   TRUMP: "https://hook.finandy.com/c1nK0JXjQT05vV8DrlUK",
   PEPE: "https://hook.finandy.com/MjxbIyQkK2q6b5FLrlUK",
-  AEVO: "https://hook.finandy.com/9VDmUcvnqNZahcR0rlUK",
+  BOME: "https://hook.finandy.com/9VDmUcvnqNZahcR0rlUK",
   PEOPLE: "https://hook.finandy.com/-hDZWK1mitcG2V8IrlUK",
-  BEL:"https://hook.finandy.com/7AgBOcwf8zavmggtrlUK"
+  BEL: "https://hook.finandy.com/7AgBOcwf8zavmggtrlUK"
 };
 
 // Antrean per coin
@@ -33,7 +33,7 @@ async function processQueue(coin) {
   const now = Date.now();
   const lastTime = lastProcessed[coin] || 0;
   const timeSinceLastProcess = now - lastTime;
-  
+
   try {
     // Jika alert pertama atau sudah lewat 1 menit dari alert terakhir, proses langsung
     if (!lastTime || timeSinceLastProcess > 60000) {
@@ -47,7 +47,7 @@ async function processQueue(coin) {
       await axios.post(url, payload);
       console.log(`✅ [${coin}] Dikirim ke Finandy`);
     }
-    
+
     // Update waktu terakhir proses
     lastProcessed[coin] = Date.now();
   } catch (err) {
